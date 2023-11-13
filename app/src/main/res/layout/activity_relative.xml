@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity"
+    android:gravity="center">
+    <!--on attribut au premiére élement un id :@+id/headImage
+    pour l'utiliser dans les autres élements -->
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/head" />
+    <ImageView
+        android:id="@+id/BodyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headImage"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/body" />
+    <!-- on utilise layout_toStartOf : pour dire qu'il faut mettre avant le body-->
+    <ImageView
+        android:id="@+id/handImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/BodyImage"
+        android:layout_below="@+id/headImage"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/hand" />
+    <!-- on utilise layout_toEndOf : pour dire qu'il faut mettre aprés le body-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/hand"
+        android:layout_toEndOf="@+id/BodyImage"
+        android:layout_below="@+id/headImage"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leg"
+        android:layout_alignStart="@+id/BodyImage"
+        android:layout_below="@+id/BodyImage"
+        android:layout_marginStart="25dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leg"
+        android:layout_alignEnd="@+id/BodyImage"
+        android:layout_below="@+id/BodyImage"
+        android:layout_marginEnd="25dp"/>
+</RelativeLayout>

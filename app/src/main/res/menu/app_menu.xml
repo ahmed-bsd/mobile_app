@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_edition"
+        android:title="Edition"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_preferences"
+        android:title="Préférences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_aide"
+        android:title="Aide"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="collapseActionView"/>
+
+</menu>
