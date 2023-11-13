@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/head"/>
+    <ImageView
+        android:id="@+id/bodyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headImage"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/body"/>
+    <ImageView
+        android:id="@+id/hand2Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headImage"
+        android:layout_toStartOf="@+id/bodyImage"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/hand"/>
+    <ImageView
+        android:id="@+id/handImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headImage"
+        android:layout_toEndOf="@+id/bodyImage"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/hand"/>
+    <ImageView
+        android:id="@+id/legImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bodyImage"
+        android:layout_alignStart="@+id/bodyImage"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/leg"/>
+    <ImageView
+        android:id="@+id/leg2Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bodyImage"
+        android:layout_alignEnd="@+id/bodyImage"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/leg"/>
+
+
+</RelativeLayout>
