@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerrainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Rechercher par nom"
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/search_view_bg" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="514dp"
+            android:columnWidth="120dp"
+            android:gravity="bottom"
+            android:horizontalSpacing="16dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="16dp"></GridView>
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Ajout terrain" />
+    </LinearLayout>
+
+</FrameLayout>
